@@ -1,5 +1,3 @@
-package Carro.java;
-
 public class Veiculo {
     String modelo;
     double preco;

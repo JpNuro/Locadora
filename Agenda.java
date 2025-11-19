@@ -1,5 +1,8 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Agenda {
-    ArrayList<String> reservas = new ArrayList();
+    List<Veiculo> reservas = new ArrayList<>();
+    List<String> datareserva = new ArrayList<>();
+    
 }
