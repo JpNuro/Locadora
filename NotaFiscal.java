@@ -37,4 +37,5 @@ public class NotaFiscal {
     public String toString() {
         return "valor:" + valor + "\n" + "data da venda:" + dataDaVenda + "\n" + "numero da nota:" + numeroDaNota;
     }
+    
 }
