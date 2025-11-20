@@ -5,9 +5,9 @@ public class Locadora {
         agenda.reservas.add(v);
         agenda.datareserva.add(data);
     }
-    public void gerarNota(Veiculo v, int dias) {
-        NotaFiscal n = new NotaFiscal();
+    public void gerarNota(Veiculo v, int valor,String dataDaVenda,int numeroDaNota,int dias) {
+        NotaFiscal n = new NotaFiscal(valor, dataDaVenda, numeroDaNota);
         n.valor = v.calcularTotal(dias);
-        n.imprimir();
+        System.out.println("Valor da nota: "+n);
     }
 }
