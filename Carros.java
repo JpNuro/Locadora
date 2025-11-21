@@ -1,34 +1,44 @@
 public class Carros extends Veiculo {
 
-    String placaCarro;
-    String corCarro;
+    protected Boolean caçamba;
+    protected Boolean rack;
+    protected int numeroPortas;
     
-    public Carros(String modelo, double preco, int ano, int kmRodados, String placaCarro, String corCarro) {
-        super(modelo, preco, ano, kmRodados);
-        this.placaCarro = placaCarro;
-        this.corCarro = corCarro;
+    public Carros(String modelo, double precoDiaria, int ano, int kmRodados, String chassi, String placa, String cor,
+            Boolean caçamba, Boolean rack, int numeroPortas) {
+        super(modelo, precoDiaria, ano, kmRodados, chassi, placa, cor);
+        this.caçamba = caçamba;
+        this.rack = rack;
+        this.numeroPortas = numeroPortas;
     }
 
-    public String getPlacaCarro() {
-        return placaCarro;
+    public Boolean getCaçamba() {
+        return caçamba;
     }
 
-    public void setPlacaCarro(String placaCarro) {
-        this.placaCarro = placaCarro;
+    public void setCaçamba(Boolean caçamba) {
+        this.caçamba = caçamba;
     }
 
-    public String getCorCarro() {
-        return corCarro;
+    public Boolean getRack() {
+        return rack;
     }
 
-    public void setCorCarro(String corCarro) {
-        this.corCarro = corCarro;
+    public void setRack(Boolean rack) {
+        this.rack = rack;
+    }
+
+    public int getNumeroPortas() {
+        return numeroPortas;
+    }
+
+    public void setNumeroPortas(int numeroPortas) {
+        this.numeroPortas = numeroPortas;
     }
 
     @Override
     public String toString() {
-        return "Carros [modelo=" + modelo + ", placaCarro=" + placaCarro + ", ano=" + ano + ", corCarro=" + corCarro
-                + ", kmRodados=" + kmRodados + "]";
+        return "Carros [caçamba=" + caçamba + ", rack=" + rack + ", numeroPortas=" + numeroPortas + "]";
     }
     
 }
