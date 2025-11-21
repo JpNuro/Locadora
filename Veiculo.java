@@ -18,7 +18,7 @@ public class Veiculo {
         this.cor = cor;
     }
 
-    
+
     public String getModelo() {
         return modelo;
     }
