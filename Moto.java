@@ -1,28 +1,40 @@
 
 public class Moto extends Veiculo {
 
-    private String placa;
+    protected String pezinho;
+    protected String capacete;
 
-    public Moto(String modelo, double preco, int ano, int kmRodados, String placa) {
+    public Moto(String modelo, double preco, int ano, int kmRodados, String pezinho, String capacete) {
         super(modelo, preco, ano, kmRodados);
-        this.placa = placa;
+        this.pezinho = pezinho;
+        this.capacete = capacete;
+
     }
 
-    public String getPlaca() {
-        return placa;
+    public void setPezinho(String pezinho) {
+        this.pezinho = pezinho;
     }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
+    public String getPezinho() {
+        return pezinho;
+    }
+
+    public void setCapacete(String capacete) {
+        this.capacete = capacete;
+    }
+
+    public String getCapacete() {
+        return capacete;
     }
 
     @Override
     public String toString() {
-        return "Moto [placa= " + placa
-                + ", modelo= " + modelo
-                + ", preco= " + preco
-                + ", ano= " + ano
-                + ", kmRodados= " + kmRodados + "]";
+        return "Moto [Pezinho= " + pezinho
+                + ", Capacete= " + capacete
+                + ", Modelo= " + modelo
+                + ", Preco= " + preco
+                + ", Ano= " + ano
+                + ", KmRodados= " + kmRodados + "]";
 
     }
 
