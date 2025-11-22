@@ -4,8 +4,9 @@ public class Moto extends Veiculo {
     protected String pezinho;
     protected String capacete;
 
-    public Moto(String modelo, double preco, int ano, int kmRodados, String pezinho, String capacete) {
-        super(modelo, preco, ano, kmRodados);
+    public Moto(String modelo, double precoDiaria, int ano, int kmRodados, String chassi, String placa, String cor,
+            String pezinho, String capacete) {
+        super(modelo, precoDiaria, ano, kmRodados, chassi, placa, cor);
         this.pezinho = pezinho;
         this.capacete = capacete;
 
@@ -29,12 +30,15 @@ public class Moto extends Veiculo {
 
     @Override
     public String toString() {
-        return "Moto [Pezinho= " + pezinho
-                + ", Capacete= " + capacete
-                + ", Modelo= " + modelo
-                + ", Preco= " + preco
-                + ", Ano= " + ano
-                + ", KmRodados= " + kmRodados + "]";
+        return "Moto [Pezinho:  " + pezinho
+                + ", Capacete:  " + capacete
+                + ", Modelo:  " + getModelo()
+                + ", Preço Diaria:  " + getPrecoDiaria()
+                + ", Ano:  " + getAno()
+                + ", Km Rodados:  " + getKmRodados()
+                + ", Chassi:  " + getChassi()
+                + ", Placa:  " + getPlaca()
+                + ", Cor:  " + getCor() + "]";
 
     }
 
